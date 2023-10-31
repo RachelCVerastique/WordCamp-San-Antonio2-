@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>WordCamp San Antonio</title>
+    <!--    Custom CSS-->
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -46,7 +48,7 @@
             <h1 class="display-4">WordCamp San Antonio</h1>
             <p class="lead">A One-day Conference About WordPress</p>
             <div class="mt-5">
-                <button type="button" class="btn btn-secondary btn-lg">Register Now</button>
+                <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
                 <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
             </div>
         </div>
@@ -70,29 +72,140 @@
             </div>
             <div class="col-lg order-3">
                 <h3 class="mb-4">What You'll Learn</h3>
-                <ul>
-                    <li><strong>WordPress 5</strong>: New Gutenberg editor</li>
-                    <li><strong>WooCommerce</strong>: E-commerce platform</li>
-                    <li><strong>Hosting</strong>: Managed web hosting</li>
-                    <li><strong>Themes</strong>: Creating your theme</li>
-                    <li><strong>Plugins</strong>: Develop your plugin</li>
-                    <li><strong>Content</strong>: Writing and podcasts</li>
-                </ul>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action"><strong>WordPress 5</strong>: New Gutenberg editor</a>
+                    <a href="#" class="list-group-item list-group-item-action"><strong>WooCommerce</strong>: E-commerce platform</a>
+                    <a href="#" class="list-group-item list-group-item-action"><strong>Hosting</strong>: Managed web hosting</a>
+                    <a href="#" class="list-group-item list-group-item-action"><strong>Themes</strong>: Creating your theme</a>
+                    <a href="#" class="list-group-item list-group-item-action"><strong>Plugins</strong>: Develop your plugin</a>
+                    <a href="#" class="list-group-item list-group-item-action"><strong>Content</strong>: Writing and podcasts</a>
+                </div>
             </div>
         </div>
         <!-- /about -->
 
         <!-- speakers -->
-        <h1 class="display-4 text-center my-5 text-muted">Speakers</h1>
-        [Speakers bios go here]
+        <h2 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="speaker-image card-img-top" src="images/gxynvmpv.jpg" alt="Mas'ud Sayed">
+                    <div class="card-body">
+                        <h4 class="card-title">Mas'ud Sayed</h4>
+                        <p class="card-text">Passionate about empowering others through the art of WordPress, Mas'ud Sayed is a digital maestro orchestrating beautiful websites for 5 years.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="speaker-image card-img-top" src="images/hndhjyox.jpg" alt="Jennifer Fuyuko">
+                    <div class="card-body">
+                        <h4 class="card-title">Jennifer Fuyuko</h4>
+                        <p class="card-text">Dreamer of infinite possibilities, weaving words to paint stories of inspiration and growth. Unleashing creativity as a college student on WordPress's vast canvas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="speaker-image card-img-top" src="images/lddguqpk.jpg" alt="Ted Wilson">
+                    <div class="card-body">
+                        <h4 class="card-title">Ted Wilson</h4>
+                        <p class="card-text">"Crafting digital landscapes, one pixel at a time. CEO of a website design firm, unleashing the power of WordPress for over 2 decades."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="speaker-image card-img-top" src="images/njmftbvb.jpg" alt="Svetlana Varvara">
+                    <div class="card-body">
+                        <h4 class="card-title">Svetlana Varvara</h4>
+                        <p class="card-text">Passionate about the intricacies of technology, championing innovation both in and out of the classroom. Teaching the next generation of creators with a blend of expertise, Wit, and a touch of WordPress magic.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="speaker-image card-img-top" src="images/jxdbdugy.jpg" alt="Min Young-Ja">
+                    <div class="card-body">
+                        <h4 class="card-title">Min Young-Ja</h4>
+                        <p class="card-text">"Unlock the digital world with Min Young-Ja, the freelance website builder who knows WordPress like no other. Empowering businesses for 3 years and counting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="speaker-image card-img-top" src="images/wefdxpkt.jpg" alt="Gaston Renard">
+                    <div class="card-body">
+                        <h4 class="card-title">Gaston Renard</h4>
+                        <p class="card-text">Tech-driven mind with a flair for WordPress wizardry. Fueling the future with innovative solutions, captivating talks, and thoughtful critiques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- /speakers -->
 
+<!--        &lt;!&ndash; speakers &ndash;&gt;-->
+<!--        <h1 class="display-4 text-center my-5 text-muted">Speakers</h1>-->
+<!--        [Speakers bios go here]-->
+<!--        &lt;!&ndash; /speakers &ndash;&gt;-->
+
         <!-- schedule -->
-        <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
-        [Conference schedule goes here]
+        <h2 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-1">Keynote: WordPress 5.0</h5>
+                    <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+                </div>
+                <p class="mb-1">Speaker Name</p>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-1">WooCommerce Basics</h5>
+                    <span class="badge badge-pill badge-secondary p-2">10:00am</span>
+                </div>
+                <p class="mb-1">Speaker Name</p>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-1">WPEngine & Flywheel</h5>
+                    <span class="badge badge-pill badge-secondary p-2">11:00am</span>
+                </div>
+                <p class="mb-1">Speaker Name</p>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-1">Lunch</h5>
+                    <span class="badge badge-pill badge-secondary p-2">12:00pm</span>
+                </div>
+                <p class="mb-1">Free pizza for everyone!</p>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-1">Creating your Theme</h5>
+                    <span class="badge badge-pill badge-secondary p-2">1:00pm</span>
+                </div>
+                <p class="mb-1">Speaker Name</p>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-1">Developing a Plugin</h5>
+                    <span class="badge badge-pill badge-secondary p-2">2:00pm</span>
+                </div>
+                <p class="mb-1">Speaker Name</p>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-1">Creating great Content and Podcasts</h5>
+                    <span class="badge badge-pill badge-secondary p-2">3:00pm</span>
+                </div>
+                <p class="mb-1">Speaker Name</p>
+            </li>
+        </ul>
+        <!-- /schedule -->
 
         <!-- callout button -->
-        <button type="button" class="btn btn-secondary btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now</button>
+        <button type="button" class="btn btn-secondary btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>
 
         <!-- signup form -->
         <hr>
@@ -145,6 +258,27 @@
         <!-- /footer -->
 
         <!-- /speakers -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerLabel">Register for WordCamp Conference</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
