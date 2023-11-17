@@ -4,9 +4,105 @@
 }
 
 #jtron{
+    background-image: url("images/wplogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 125px;
+    margin-top: 56px;
 }
 
 #year{
     margin-top: 8px;
+}
+
+/*#jtron-img{*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+.btn{
+    background: rgba(68, 65, 64);
+    color: white;
+    font-family: KeyFont;
+}
+
+#abtWordcamp{
+    background: rgba(234,236,239);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+#expertSpeaker{
+    background: rgba(234,236,239);
+    padding-top: 10px;
+}
+
+#learn{
+    background: rgba(234,236,239);
+    padding-top: 10px;
+}
+
+#title{
+    background: rgba(255,255,255,0.95);
+}
+
+#navBar{
+    background: rgba(234,236,239, 0.8);
+}
+
+a{
+    color: rgba(68, 65, 64);
+    font-family: KeyFont;
+}
+
+/*fonts*/
+@font-face {
+    font-family: "KeyFont";
+    src: url('fonts/TiresiasKeyfontV2-p738Z.ttf');
+}
+
+h1, h3, h2, h4{
+    font-family: 'KeyFont';
+    padding-top: 10px;
+}
+
+#nvc{
+    color: rgba(68, 65, 64)
+}
+
+#sec2{
+    background: rgba(234,236,239);
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#sec3{
+    background: rgba(234,236,239);
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+#sayed{
+    padding-bottom: 24px;
+}
+
+#wilson{
+    padding-bottom: 24px;
+}
+
+#ja{
+    padding-bottom: 24px;
+}
+
+#renard{
+    padding-bottom: 48px;
+}
+
+#jbuttons{
+    padding-bottom: 20px;
 }

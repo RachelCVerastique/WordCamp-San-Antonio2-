@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>WordCamp San Antonio</title>
-    <!--    Custom CSS-->
-    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--    Custom CSS-->
+    <link rel="stylesheet" href="style.css">
 
     <title>Hello, world!</title>
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg  fixed-top" id="navBar">
         <div class="container">
             <a class="navbar-brand order-1 mr-0" href="#" target="_blank">Presented by NVC</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,12 +44,14 @@
 
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid container text-sm-center" id="jtron">
-        <div class="container">
+
+
+        <div class="container"  id="title">
             <h1 class="display-4">WordCamp San Antonio</h1>
             <p class="lead">A One-day Conference About WordPress</p>
-            <div class="mt-5">
-                <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
-                <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
+            <div class="mt-5" id="jbuttons">
+                <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
+                <a class="btn btn-lg" href="#speakers">See Speakers</a>
             </div>
         </div>
     </div>
@@ -58,20 +60,21 @@
     <div class="container pt-4">
 
         <!-- about -->
+
         <div id="about" class="row">
-            <div class="col-lg order-lg-2">
+            <div id="abtWordcamp" class="col-lg order-lg-2">
                 <h3 class="mb-4">About WordCamp</h3>
                 <img class="img-fluid rounded" src="images/sananto.jpg" alt="Photo of San Antonio, TX">
                 <p>The beautiful city of San Antonio, TX will be the host city for WordCamp!</p>
                 <p>Explore the future of WordPress with a lineup of industry professionals. Discover new techniques to advance your career as a web designer.</p>
             </div>
-            <div class="col-lg order-lg-1">
+            <div class="col-lg order-lg-1" id="expertSpeaker">
                 <h3 class="mb-4">Expert Speakers</h3>
                 <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets!</p>
                 <p>Want to meet the international WordPress community and share skills with some of the world's top experts and makers? Be the first to know what to expect for the future of WordPress.</p>
                 <p>WordCamp is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p>
             </div>
-            <div class="col-lg order-3">
+            <div class="col-lg order-3" id="learn">
                 <h3 class="mb-4">What You'll Learn</h3>
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action"><strong>WordPress 5</strong>: New Gutenberg editor</a>
@@ -83,13 +86,16 @@
                 </div>
             </div>
         </div>
+
         <!-- /about -->
 
         <!-- speakers -->
-        <h2 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
+        <h2 id="speakers" class="display-4 text-center my-5 ">Speakers</h2>
+
+        <div id="sec2">
         <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card mb-3">
+            <div class="col-md-6 col-lg-4 speaker">
+                <div class="card mb-3" id="sayed">
                     <img class="speaker-image card-img-top" src="images/gxynvmpv.jpg" alt="Mas'ud Sayed">
                     <div class="card-body">
                         <h4 class="card-title">Mas'ud Sayed</h4>
@@ -97,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 speaker">
                 <div class="card mb-3">
                     <img class="speaker-image card-img-top" src="images/hndhjyox.jpg" alt="Jennifer Fuyuko">
                     <div class="card-body">
@@ -106,8 +112,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card mb-3">
+            <div class="col-md-6 col-lg-4 speaker">
+                <div class="card mb-3" id="wilson">
                     <img class="speaker-image card-img-top" src="images/lddguqpk.jpg" alt="Ted Wilson">
                     <div class="card-body">
                         <h4 class="card-title">Ted Wilson</h4>
@@ -115,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 speaker">
                 <div class="card mb-3">
                     <img class="speaker-image card-img-top" src="images/njmftbvb.jpg" alt="Svetlana Varvara">
                     <div class="card-body">
@@ -124,8 +130,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card mb-3">
+            <div class="col-md-6 col-lg-4 speaker">
+                <div class="card mb-3" id="ja">
                     <img class="speaker-image card-img-top" src="images/jxdbdugy.jpg" alt="Min Young-Ja">
                     <div class="card-body">
                         <h4 class="card-title">Min Young-Ja</h4>
@@ -133,8 +139,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card mb-3">
+            <div class="col-md-6 col-lg-4 speaker">
+                <div class="card mb-3" id="renard">
                     <img class="speaker-image card-img-top" src="images/wefdxpkt.jpg" alt="Gaston Renard">
                     <div class="card-body">
                         <h4 class="card-title">Gaston Renard</h4>
@@ -142,6 +148,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <!-- /speakers -->
 
@@ -151,7 +158,8 @@
 <!--        &lt;!&ndash; /speakers &ndash;&gt;-->
 
         <!-- schedule -->
-        <h2 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
+        <h2 id="schedule" class="display-4 text-center my-5">Schedule</h2>
+        <div id="sec3">
         <ul class="list-group">
             <li class="list-group-item">
                 <div class="d-flex justify-content-between">
@@ -203,6 +211,7 @@
                 <p class="mb-1">Speaker Name</p>
             </li>
         </ul>
+        </div>
         <!-- /schedule -->
 
         <!-- callout button -->
@@ -210,7 +219,7 @@
 
         <!-- signup form -->
         <hr>
-        <div class="row py-4 text-muted">
+        <div class="row py-4" id="nvc">
             <div class="col-md col-xl-5">
                 <p><strong>About Northwest Vista College</strong></p>
                 <p>Northwest Vista College brings affordable technology education to people everywhere to help them achieve their dreams and change the world.</p>
@@ -229,7 +238,7 @@
         <!-- /signup form -->
 
         <!-- footer -->
-        <div class="row py-3">
+        <div class="row py-3" id="footer">
             <div class="col-md-7">
                 <ul class="nav">
                     <li class="nav-item">
@@ -258,7 +267,7 @@
         </div>
         <!-- /footer -->
 
-        <!-- /speakers -->
+
     </div>
 
     <!-- Modal -->
