@@ -22,25 +22,22 @@
 /*}*/
 
 .btn{
-    background: rgba(68, 65, 64);
+    /*background: rgba(68, 65, 64);*/
     color: white;
     font-family: KeyFont;
 }
 
 #abtWordcamp{
-    background: rgba(234,236,239);
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 10px;
 }
 
 #expertSpeaker{
-    background: rgba(234,236,239);
     padding-top: 10px;
 }
 
 #learn{
-    background: rgba(234,236,239);
     padding-top: 10px;
 }
 
@@ -48,12 +45,8 @@
     background: rgba(255,255,255,0.95);
 }
 
-#navBar{
-    background: rgba(234,236,239, 0.8);
-}
-
 a{
-    color: rgba(68, 65, 64);
+    /*color: rgba(68, 65, 64);*/
     font-family: KeyFont;
 }
 
@@ -73,30 +66,13 @@ h1, h3, h2, h4{
 }
 
 #sec2{
-    background: rgba(234,236,239);
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 #sec3{
-    background: rgba(234,236,239);
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-}
-
-#sayed{
-    padding-bottom: 24px;
-}
-
-#wilson{
-    padding-bottom: 24px;
-}
-
-#ja{
-    padding-bottom: 24px;
+    padding: 15px 15px 15px 15px;
 }
 
 #renard{

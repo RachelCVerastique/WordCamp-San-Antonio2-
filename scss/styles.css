@@ -1,0 +1,43 @@
+.mainBkgClr {
+  background: rgb(234, 236, 239);
+}
+
+.btn {
+  background: rgb(68, 65, 64);
+}
+
+a {
+  color: rgb(68, 65, 64);
+}
+
+.btm-padding {
+  padding-bottom: 24px;
+}
+
+nav a {
+  color: rgb(68, 65, 64);
+}
+nav a:hover {
+  color: black;
+  font-style: italic;
+}
+nav ul {
+  font-size: 20px;
+}
+
+ul h5 {
+  font-weight: bold;
+}
+ul p {
+  font-style: oblique;
+}
+
+.footer .nav a {
+  color: rgb(68, 65, 64);
+}
+.footer .nav a:hover {
+  color: black;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=styles.css.map */

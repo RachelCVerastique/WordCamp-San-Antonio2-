@@ -1,0 +1,65 @@
+//Variables----------------------------------------
+$mainColor: rgba(234,236,239);
+$secondaryColor: rgba(68, 65, 64);
+$btmPad24: 24px;
+
+
+.mainBkgClr{
+  background: $mainColor;
+}
+
+.btn{
+  background: $secondaryColor;
+}
+
+a{
+  color: $secondaryColor;
+}
+
+.btm-padding{
+  padding-bottom: $btmPad24;
+}
+
+//nested-------------------------------------------
+
+nav{
+  a{
+    color: $secondaryColor;
+
+    &:hover {
+      color: black;
+      font-style: italic;
+    }
+
+  }
+
+  ul{
+    font-size: 20px;
+  }
+}
+
+
+
+ul{
+  h5{
+    font-weight: bold;
+  }
+
+  p{
+    font-style: oblique;
+  }
+}
+
+
+.footer {
+  .nav {
+    a {
+      color: $secondaryColor;
+
+      &:hover {
+        color: black;
+        font-style: italic;
+        }
+      }
+    }
+  }
